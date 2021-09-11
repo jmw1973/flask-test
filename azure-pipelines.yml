@@ -46,4 +46,8 @@ stages:
         DockerNamespace: 'jmwregistry.azurecr.io'
         DockerRepository: 'jwflasktest'
         DockerImageTag: 'latest'
+        ConfigurationSettings: |
+          -DOCKER_REGISTRY_SERVER_URL jmwregistry.azurecr.io
+          -DOCKER_REGISTRY_SERVER_USERNAME jmwregistry
+          -DOCKER_REGISTRY_SERVER_PASSWORD SeWGOl8yTdpHUem9+rTRcWQtaHWWZOCG
     
