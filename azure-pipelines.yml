@@ -43,11 +43,14 @@ stages:
         azureSubscription: 'Azure Pass - Sponsorship(5fa7755e-48d1-4863-9ba6-f1c23c7dedcf)'
         appType: 'webAppContainer'
         WebAppName: 'jwflasktest'
+        deployToSlotOrASE: true
+        ResourceGroupName: 'rg-azs-deployment'
+        SlotName: 'Pre-Production'
         DockerNamespace: 'jmwregistry.azurecr.io'
         DockerRepository: 'jmwflasktest'
         DockerImageTag: 'latest'
         ConfigurationSettings: |
           -DOCKER_REGISTRY_SERVER_URL jmwregistry.azurecr.io
           -DOCKER_REGISTRY_SERVER_USERNAME jmwregistry
-          -DOCKER_REGISTRY_SERVER_PASSWORD SeWGOl8yTdpHUem9+rTRcWQtaHWWZOCG
-    
+          -DOCKER_REGISTRY_SERVER_PASSWORD SeWGOl8yTdpHUem9+rTRcWQtaHWWZOC
+ 
