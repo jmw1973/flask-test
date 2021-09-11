@@ -36,4 +36,14 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
-          $(tag)
+          latest
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: 'AzureRM'
+        azureSubscription: 'Azure Pass - Sponsorship(5fa7755e-48d1-4863-9ba6-f1c23c7dedcf)'
+        appType: 'webAppContainer'
+        WebAppName: 'jwflasktest'
+        DockerNamespace: 'jmwregistry.azurecr.io'
+        DockerRepository: 'jwflasktest'
+        DockerImageTag: 'latest'
+    
