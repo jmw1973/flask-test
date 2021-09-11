@@ -44,7 +44,7 @@ stages:
         appType: 'webAppContainer'
         WebAppName: 'jwflasktest'
         DockerNamespace: 'jmwregistry.azurecr.io'
-        DockerRepository: 'jwflasktest'
+        DockerRepository: 'jmwflasktest'
         DockerImageTag: 'latest'
         ConfigurationSettings: |
           -DOCKER_REGISTRY_SERVER_URL jmwregistry.azurecr.io
