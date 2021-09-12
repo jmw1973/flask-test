@@ -16,8 +16,8 @@ def hello():
         visits = "<i>cannot connect to Redis, counter disabled</i>"
 
     html = "<h3>Hello {name}!</h3>" \
-           "<b>Your Hostname 6:</b> {hostname}<br/>" \
-           "<b>Visits so far 6:</b> {visits}"
+           "<b>Your Hostname 7:</b> {hostname}<br/>" \
+           "<b>Visits so far 7:</b> {visits}"
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
 
 if __name__ == "__main__":
