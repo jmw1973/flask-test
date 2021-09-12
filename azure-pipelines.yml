@@ -45,7 +45,7 @@ stages:
         WebAppName: 'jwflasktest'
         deployToSlotOrASE: true
         ResourceGroupName: 'rg-azs-deployment'
-        SlotName: 'Pre-Production'
+        SlotName: 'Production'
         DockerNamespace: 'jmwregistry.azurecr.io'
         DockerRepository: 'jmwflasktest'
         DockerImageTag: 'latest'
